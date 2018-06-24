@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>列表</title>
+    <script>
+      function format_field(field, bgcolor){
+          if(field >= 10000){
+              var peanuts = (10000 + field % 10000).toFixed(4).substring(1, 10);
+              while(peanuts.indexOf("0") == 0){
+                  peanuts = "<font color='" + bgcolor + "'>0</font>" + peanuts.substring(1);
+              }
+              field = Math.floor(field / 10000) + "万" + peanuts;
+          }else{
+              field = field.toFixed(4);
+          }
+          return field + "元";
+      };
+      function refresh(){
+          var time = new Date().getTime() - 1529769600000;
+          var personal_delta_profit = time * 1.93199189053522E-7;
+          var personal_field1 = 15582.97698407438 + personal_delta_profit;
+          var personal_field2 = 1908.643485892557 + personal_delta_profit;
+          var personal_field3 = 20482.97698407438 + personal_delta_profit;
+          document.getElementById("PersonalTermInvest").innerHTML = format_field(personal_field1, "#F5F5F5");
+          document.getElementById("PersonalTermInvestAccumulatedProfit").innerHTML = format_field(personal_field2, "#F5F5F5");
+          document.getElementById("PersonalInvest").innerHTML = format_field(personal_field3, "#92D050");
+          var sum_delta_profit = time * 3.6011367691961644E-6;
+          var sum_field1 = 315869.18381911877 + sum_delta_profit;
+          var sum_field2 = 49185.91987972486 + sum_delta_profit;
+          var sum_field3 = 474969.18381911877 + sum_delta_profit;
+          document.getElementById("SumTermInvest").innerHTML = format_field(sum_field1, "#F5F5F5");
+          document.getElementById("SumTermInvestAccumulatedProfit").innerHTML = format_field(sum_field2, "#F5F5F5");
+          document.getElementById("SumInvest").innerHTML = format_field(sum_field3, "#92D050");
+      };
+      function init(){
+          document.getElementById("PersonalQuickWithdrawInvest").innerHTML = format_field(4900.0, "#F5F5F5");
+          document.getElementById("SumQuickWithdrawInvest").innerHTML = format_field(159100.0, "#F5F5F5");
+      };
+      window.onload=init;
+      window.setInterval(refresh, 100);
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td align="center" bgcolor="#BFBFBF" colspan="2">总览</td>
+        <td align="center" bgcolor="#BFBFBF">董秀英</td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF" rowspan="2">定期</td>
+        <td align="left"   bgcolor="#BFBFBF">本金利息</td>
+        <td align="right"  bgcolor="#F5F5F5" id="PersonalTermInvest"></td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF">累计收益</td>
+        <td align="right"  bgcolor="#F5F5F5" id="PersonalTermInvestAccumulatedProfit"></td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF" rowspan="2">活期</td>
+        <td align="left"   bgcolor="#BFBFBF">本金</td>
+        <td align="right"  bgcolor="#F5F5F5" id="PersonalQuickWithdrawInvest"></td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF" colspan="2">活期利息过于琐碎，不统计</td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#BFBFBF" colspan="2">定期活期合计</td>
+        <td align="right"  bgcolor="#92D050" id="PersonalInvest"></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#FFFFFF" colspan="3">　　　</td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#BFBFBF" colspan="3">张建新+董秀英+张富林+李伟卫</td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF" rowspan="2">定期</td>
+        <td align="left"   bgcolor="#BFBFBF">本金利息</td>
+        <td align="right"  bgcolor="#F5F5F5" id="SumTermInvest"></td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF">累计收益</td>
+        <td align="right"  bgcolor="#F5F5F5" id="SumTermInvestAccumulatedProfit"></td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF" rowspan="2">活期</td>
+        <td align="left"   bgcolor="#BFBFBF">本金</td>
+        <td align="right"  bgcolor="#F5F5F5" id="SumQuickWithdrawInvest"></td>
+      </tr>
+      <tr>
+        <td align="left"   bgcolor="#BFBFBF" colspan="2">活期利息过于琐碎，不统计</td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#BFBFBF" colspan="2">定期活期合计</td>
+        <td align="right"  bgcolor="#92D050" id="SumInvest"></td>
+      </tr>
+    </table>
+  </body>
+</html>
