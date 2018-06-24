@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>列表</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>薅羊毛小队-队员：张建新</title>
     <script>
       function format_field(field, bgcolor){
           if(field >= 10000){
@@ -19,16 +20,16 @@
       function refresh(){
           var time = new Date().getTime() - 1529769600000;
           var personal_delta_profit = time * 3.3513394472942345E-7;
-          var personal_field1 = 24874.19330613018 + personal_delta_profit;
-          var personal_field2 = 3838.110467746338 + personal_delta_profit;
-          var personal_field3 = 39074.19330613018 + personal_delta_profit;
+          var personal_field1 = 24903.148878954802 + personal_delta_profit;
+          var personal_field2 = 3867.0660405709605 + personal_delta_profit;
+          var personal_field3 = 39103.1488789548 + personal_delta_profit;
           document.getElementById("PersonalTermInvest").innerHTML = format_field(personal_field1, "#F5F5F5");
           document.getElementById("PersonalTermInvestAccumulatedProfit").innerHTML = format_field(personal_field2, "#F5F5F5");
           document.getElementById("PersonalInvest").innerHTML = format_field(personal_field3, "#92D050");
           var sum_delta_profit = time * 3.6011367691961644E-6;
-          var sum_field1 = 315869.18381911877 + sum_delta_profit;
-          var sum_field2 = 49185.91987972486 + sum_delta_profit;
-          var sum_field3 = 474969.18381911877 + sum_delta_profit;
+          var sum_field1 = 315993.8220359773 + sum_delta_profit;
+          var sum_field2 = 49497.05809658341 + sum_delta_profit;
+          var sum_field3 = 475093.8220359773 + sum_delta_profit;
           document.getElementById("SumTermInvest").innerHTML = format_field(sum_field1, "#F5F5F5");
           document.getElementById("SumTermInvestAccumulatedProfit").innerHTML = format_field(sum_field2, "#F5F5F5");
           document.getElementById("SumInvest").innerHTML = format_field(sum_field3, "#92D050");
@@ -42,7 +43,7 @@
     </script>
   </head>
   <body>
-    <table>
+    <table style="width:100%; height:100%;">
       <tr>
         <td align="center" bgcolor="#BFBFBF" colspan="2">总览</td>
         <td align="center" bgcolor="#BFBFBF">张建新</td>
