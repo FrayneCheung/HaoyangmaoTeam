@@ -20,23 +20,23 @@
       function refresh(){
           var time = new Date().getTime() - 1530633600000;
           var personal_delta_profit = time * 1.7815800902406072E-7;
-          var personal_field1 = 16953.69439562357 + personal_delta_profit;
+          var personal_field1 = 13953.69439562357 + personal_delta_profit;
           var personal_field2 = 2096.574097441754 + personal_delta_profit;
-          var personal_field3 = 21953.69439562357 + personal_delta_profit;
+          var personal_field3 = 13953.69439562357 + personal_delta_profit;
           document.getElementById("PersonalTermInvest").innerHTML = format_field(personal_field1, "#F5F5F5");
           document.getElementById("PersonalTermInvestAccumulatedProfit").innerHTML = format_field(personal_field2, "#F5F5F5");
           document.getElementById("PersonalInvest").innerHTML = format_field(personal_field3, "#92D050");
           var sum_delta_profit = time * 4.003577435346471E-6;
-          var sum_field1 = 327617.6192773247 + sum_delta_profit;
+          var sum_field1 = 325617.6192773247 + sum_delta_profit;
           var sum_field2 = 53060.82533793074 + sum_delta_profit;
-          var sum_field3 = 490817.6192773247 + sum_delta_profit;
+          var sum_field3 = 483817.6192773247 + sum_delta_profit;
           document.getElementById("SumTermInvest").innerHTML = format_field(sum_field1, "#F5F5F5");
           document.getElementById("SumTermInvestAccumulatedProfit").innerHTML = format_field(sum_field2, "#F5F5F5");
           document.getElementById("SumInvest").innerHTML = format_field(sum_field3, "#92D050");
       };
       function init(){
-          document.getElementById("PersonalQuickWithdrawInvest").innerHTML = format_field(5000.0, "#F5F5F5");
-          document.getElementById("SumQuickWithdrawInvest").innerHTML = format_field(163200.0, "#F5F5F5");
+          document.getElementById("PersonalQuickWithdrawInvest").innerHTML = format_field(0.0, "#F5F5F5");
+          document.getElementById("SumQuickWithdrawInvest").innerHTML = format_field(158200.0, "#F5F5F5");
       };
       window.onload=init;
       window.setInterval(refresh, 100);
@@ -70,7 +70,7 @@
         <td align="right"  bgcolor="#92D050" id="PersonalInvest"></td>
       </tr>
       <tr>
-        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Wed Jul 04 13:29:51 CST 2018</font></td>
+        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Wed Jul 04 18:06:15 CST 2018</font></td>
       </tr>
       <tr>
         <td align="center" bgcolor="#BFBFBF" colspan="3">张建新+董秀英+张富林+李伟卫</td>
