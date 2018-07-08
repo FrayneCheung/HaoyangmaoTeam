@@ -18,18 +18,18 @@
           return field + "元";
       };
       function refresh(){
-          var time = new Date().getTime() - 1530892800000;
+          var time = new Date().getTime() - 1530979200000;
           var personal_delta_profit = time * 1.3283870182672228E-6;
-          var personal_field1 = 210220.09017991947 + personal_delta_profit;
-          var personal_field2 = 27767.190602207047 + personal_delta_profit;
-          var personal_field3 = 275220.0901799195 + personal_delta_profit;
+          var personal_field1 = 210334.86281829778 + personal_delta_profit;
+          var personal_field2 = 27881.963240585334 + personal_delta_profit;
+          var personal_field3 = 275334.8628182978 + personal_delta_profit;
           document.getElementById("PersonalTermInvest").innerHTML = format_field(personal_field1, "#F5F5F5");
           document.getElementById("PersonalTermInvestAccumulatedProfit").innerHTML = format_field(personal_field2, "#F5F5F5");
           document.getElementById("PersonalInvest").innerHTML = format_field(personal_field3, "#92D050");
           var sum_delta_profit = time * 4.001786970848824E-6;
-          var sum_field1 = 326654.2589795057 + sum_delta_profit;
-          var sum_field2 = 54097.31504011178 + sum_delta_profit;
-          var sum_field3 = 484854.2589795057 + sum_delta_profit;
+          var sum_field1 = 327000.01337378705 + sum_delta_profit;
+          var sum_field2 = 54443.069434393125 + sum_delta_profit;
+          var sum_field3 = 485200.01337378705 + sum_delta_profit;
           document.getElementById("SumTermInvest").innerHTML = format_field(sum_field1, "#F5F5F5");
           document.getElementById("SumTermInvestAccumulatedProfit").innerHTML = format_field(sum_field2, "#F5F5F5");
           document.getElementById("SumInvest").innerHTML = format_field(sum_field3, "#92D050");
@@ -41,6 +41,9 @@
       window.onload=init;
       window.setInterval(refresh, 100);
     </script>
+    <style>
+      tr,td{font-size:20px;}
+    </style>
   </head>
   <body>
     <table style="width:100%; height:100%;">
@@ -70,7 +73,7 @@
         <td align="right"  bgcolor="#92D050" id="PersonalInvest"></td>
       </tr>
       <tr>
-        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Sat Jul 07 11:59:32 CST 2018</font></td>
+        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Sun Jul 08 23:36:33 CST 2018</font></td>
       </tr>
       <tr>
         <td align="center" bgcolor="#BFBFBF" colspan="3">张建新+董秀英+张富林+李伟卫</td>
