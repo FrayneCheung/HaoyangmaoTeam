@@ -14,7 +14,7 @@
                   peanuts = peanuts.substring(1);
               }
               if(invisible_zero.lenth > 0){
-                  peanuts = "<font color='" + bgcolor + "'>" + invisible_zero + "</font>" + peanuts
+                  peanuts = "<font color='" + bgcolor + "'>" + invisible_zero + "</font>" + peanuts;
               }
               field = Math.floor(field / 10000) + "万" + peanuts;
           }else{
@@ -44,7 +44,7 @@
           document.getElementById("SumQuickWithdrawInvest").innerHTML = format_field(142300.0, "#F5F5F5");
       };
       window.onload=init;
-//       window.setInterval(refresh, 100);
+      window.setInterval(refresh, 100);
     </script>
     <style>
       tr,td{font-size:20px;}
@@ -78,7 +78,7 @@
         <td align="right"  bgcolor="#92D050" id="PersonalInvest"></td>
       </tr>
       <tr>
-        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Mon Jul 09 21:54:41 CST 2018</font></td>
+        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Mon Jul 09 22:01:36 CST 2018</font></td>
       </tr>
       <tr>
         <td align="center" bgcolor="#BFBFBF" colspan="3">张建新+董秀英+张富林+李伟卫</td>
