@@ -23,25 +23,25 @@
           return field + "元";
       };
       function refresh(){
-          var time = new Date().getTime() - 1531152000000;
+          var time = new Date().getTime() - 1531411200000;
           var personal_delta_profit = time * 1.184864811307516E-6;
-          var personal_field1 = 209309.31009505436 + personal_delta_profit;
-          var personal_field2 = 28111.508517341907 + personal_delta_profit;
-          var personal_field3 = 274309.31009505433 + personal_delta_profit;
+          var personal_field1 = 209616.4270541453 + personal_delta_profit;
+          var personal_field2 = 28418.625476432815 + personal_delta_profit;
+          var personal_field3 = 274616.42705414526 + personal_delta_profit;
           document.getElementById("PersonalTermInvest").innerHTML = format_field(personal_field1, "#F5F5F5");
           document.getElementById("PersonalTermInvestAccumulatedProfit").innerHTML = format_field(personal_field2, "#F5F5F5");
           document.getElementById("PersonalInvest").innerHTML = format_field(personal_field3, "#92D050");
-          var sum_delta_profit = time * 3.8771758072728165E-6;
-          var sum_field1 = 322299.1421623497 + sum_delta_profit;
-          var sum_field2 = 55134.578222955795 + sum_delta_profit;
-          var sum_field3 = 463299.1421623497 + sum_delta_profit;
+          var sum_delta_profit = time * 3.95949395889244E-6;
+          var sum_field1 = 322105.41959636536 + sum_delta_profit;
+          var sum_field2 = 56247.59565697143 + sum_delta_profit;
+          var sum_field3 = 474305.41959636536 + sum_delta_profit;
           document.getElementById("SumTermInvest").innerHTML = format_field(sum_field1, "#F5F5F5");
           document.getElementById("SumTermInvestAccumulatedProfit").innerHTML = format_field(sum_field2, "#F5F5F5");
           document.getElementById("SumInvest").innerHTML = format_field(sum_field3, "#92D050");
       };
       function init(){
           document.getElementById("PersonalQuickWithdrawInvest").innerHTML = format_field(65000.0, "#F5F5F5");
-          document.getElementById("SumQuickWithdrawInvest").innerHTML = format_field(141000.0, "#F5F5F5");
+          document.getElementById("SumQuickWithdrawInvest").innerHTML = format_field(152200.0, "#F5F5F5");
       };
       window.onload=init;
       window.setInterval(refresh, 100);
@@ -78,7 +78,7 @@
         <td align="right"  bgcolor="#92D050" id="PersonalInvest"></td>
       </tr>
       <tr>
-        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Tue Jul 10 21:18:30 CST 2018</font></td>
+        <td align="center" bgcolor="#FFFFFF" colspan="3"><font color="#FFFFFF">Last Modify : Fri Jul 13 13:51:32 CST 2018</font></td>
       </tr>
       <tr>
         <td align="center" bgcolor="#BFBFBF" colspan="3">张建新+董秀英+张富林+李伟卫</td>
